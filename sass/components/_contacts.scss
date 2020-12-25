@@ -1,0 +1,32 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-header {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $text-color;
+  fill: currentColor;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms $cubic-function;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+}
+
+.contacts .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.icon-letter,
+.icon-smartphone {
+  margin-right: 10px;
+}
