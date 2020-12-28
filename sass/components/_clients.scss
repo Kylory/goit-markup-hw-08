@@ -1,35 +1,35 @@
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  text-align: center;
-}
+// .clients {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+//   text-align: center;
+// }
 
-.clients-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  margin-bottom: 50px;
-}
+// .clients-title {
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 1.17;
+//   margin-bottom: 50px;
+// }
 
-.clients-list {
-  display: flex;
-  justify-content: space-between;
-}
+// .clients-list {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
-.clients-list a {
-  width: 170px;
-  height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  fill: #afb1b8;
-  transition: fill 250ms $cubic-function, border-color 250ms $cubic-function;
+// .clients-list a {
+//   width: 170px;
+//   height: 90px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border: 1px solid #afb1b8;
+//   border-radius: 4px;
+//   fill: #afb1b8;
+//   transition: fill 250ms $cubic-function, border-color 250ms $cubic-function;
 
-  &:hover,
-  &:focus {
-    fill: $blue-color;
-    border-color: $blue-color;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     fill: $blue-color;
+//     border-color: $blue-color;
+//   }
+// }

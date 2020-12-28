@@ -1,16 +1,21 @@
-.hero .container {
-  max-width: 696px;
-}
+// .hero .container {
+//   max-width: 696px;
+// }
 
 .hero {
-  display: flex;
-  text-align: center;
-  height: 600px;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  text-align: center;
+  // @media screen and (max-width: $mobile) {
+  // }
+
+  //   width: 100%;
+  //   margin-right: auto;
+  //   margin-left: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #c4c4c4;
   background-image: linear-gradient(
       to right,
@@ -21,31 +26,47 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (max-width: 1199px) {
+    height: 400px;
+  }
+}
+
+.hero .container {
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+  }
 }
 
 .hero-title {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 360px;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   color: $white-color;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .order-button {
-  display: inline-block;
+  // display: inline-block;
   padding: 10px 32px;
   background-color: $blue-color;
   color: $white-color;
   text-decoration: none;
   border-radius: 4px;
-  min-width: 200px;
+  width: 200px;
+  // height: 50px;
   border: transparent;
 
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  font-size: 15px;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   color: $white-color;
   transition: color 250ms $cubic-function,
