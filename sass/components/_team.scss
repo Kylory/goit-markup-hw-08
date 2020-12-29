@@ -1,8 +1,15 @@
-// .team {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-//   background-color: #f5f4fa;
-// }
+.team {
+    background-color: #f5f4fa;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    @media screen and (min-width: $desktop){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
 
 // .team-title {
 //   font-weight: 700;
