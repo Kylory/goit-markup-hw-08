@@ -8,6 +8,11 @@
   transition: opacity 250ms $cubic-function;
   z-index: 1;
 
+  @media screen and (max-width: 479px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -20,8 +25,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  height: 581px;
+  // width: 528px;
+  // height: 581px;
+
+  width: calc(100% - 30px);
 
   background: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -78,9 +85,9 @@
   justify-content: center;
   align-items: center;
 
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 1.71;
+  line-height: 1.17;
   color: $text-color;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -153,7 +160,7 @@ svg {
   display: inline-block;
   width: 16px;
   height: 15px;
-  margin-right: 8px;
+  margin-right: 5px;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2222 1.66667V13.3333H1.77778V1.66667H14.2222ZM14.2222 0H1.77778C0.8 0 0 0.75 0 1.66667V13.3333C0 14.25 0.8 15 1.77778 15H14.2222C15.2 15 16 14.25 16 13.3333V1.66667C16 0.75 15.2 0 14.2222 0Z' fill='%23212121'/%3E%3C/svg%3E%0A");
 }
 
@@ -169,7 +176,7 @@ svg {
 .checkbox-field a {
   color: $blue-color;
   text-decoration: underline;
-  margin-left: 4px;
+  margin-left: 3px;
 }
 
 .submit-button {
