@@ -4,18 +4,29 @@
 }
 
 .footer .container {
-  //   display: flex;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-right: auto;
-  margin-left: auto;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // padding-left: 83px;
+    // padding-right: 83px;
+  }
+  // margin-right: auto;
+  // margin-left: auto;
 }
 
-// .foorer-all-contacts {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-// }
+.foorer-all-contacts {
+  @media screen and (min-width: $tablet) {
+    padding-left: 65px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .location,
 .contacts-footer {
@@ -52,7 +63,14 @@
 
 /* social-links-footer */
 .social-links-footer {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-right: 74px;
+    padding-top: 5px;
+  }
 
   //   margin-left: 70px;
   //   padding-top: 72px;
@@ -95,11 +113,13 @@
 }
 
 // /* Subscribe form */
-// .subscribe {
-//   margin-left: 93px;
-//   padding-top: 72px;
-//   padding-bottom: 94px;
-// }
+.subscribe {
+  margin-left: auto;
+  margin-right: auto;
+  // margin-left: 93px;
+  // padding-top: 72px;
+  // padding-bottom: 94px;
+}
 
 .subscribe .title {
   display: block;
@@ -119,9 +139,15 @@
 
 .form .email {
   width: 100%;
-  //   width: 358px;
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    margin-right: 12px;
+  }
   height: 50px;
-  margin-right: 12px;
   padding: 15px 16px;
   font-weight: 400;
   line-height: 1.25;

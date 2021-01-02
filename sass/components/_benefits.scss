@@ -1,8 +1,6 @@
 .benefits .container {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-right: auto;
-  margin-left: auto;
 
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
@@ -10,15 +8,33 @@
   }
 }
 
-// .benefits-content {
-//   display: flex;
-//   justify-content: space-between;
-// }
+.benefits-content {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .benefits .item {
-  //   max-width: 270px;
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (min-width: $mobile) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: 354px;
+    margin: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    // width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -29,10 +45,12 @@
   color: $title-color;
   text-transform: uppercase;
   margin-bottom: 10px;
-  text-align: center;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
-.benefits-text {
+.benefits-description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -50,7 +68,10 @@
   justify-content: center;
   align-items: center;
 
-  @media screen and (min-width: $mobile) {
-    width: 450px;
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      width: 270px;
+    }
   }
 }

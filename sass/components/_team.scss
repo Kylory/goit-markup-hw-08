@@ -5,8 +5,8 @@
 .team .container {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-right: auto;
-  margin-left: auto;
+  // margin-right: auto;
+  // margin-left: auto;
 
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
@@ -14,11 +14,21 @@
   }
 }
 
-// .team-cards {
-//   display: flex;
-//   justify-content: space-between;
-//   text-align: center;
-// }
+.team-cards {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
 
 .team-cards .item {
   //   width: 270px;
@@ -34,7 +44,19 @@
       margin-bottom: 30px;
     }
   }
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+    height: 536px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+    height: 428px;
+  }
 }
+
 .team-title {
   font-weight: 700;
   font-size: 28px;
