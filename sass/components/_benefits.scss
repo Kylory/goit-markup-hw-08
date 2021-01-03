@@ -9,11 +9,11 @@
 }
 
 .benefits-content {
-  @media screen and (min-width: $tablet) {
+  margin: -15px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: -15px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -31,10 +31,8 @@
     margin: 15px;
   }
   @media screen and (min-width: $desktop) {
-    // width: 270px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    width: 270px;
+    margin: 15px;
   }
 }
 

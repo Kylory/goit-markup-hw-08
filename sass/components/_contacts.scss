@@ -2,9 +2,21 @@
   display: flex;
   margin-left: auto;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     flex-direction: column;
     justify-content: center;
+  }
+}
+
+.header .contacts {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.menu-mobile .contacts {
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 }
 

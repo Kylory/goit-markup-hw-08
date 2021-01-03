@@ -21,12 +21,40 @@
                     <li class="item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
                     <li class="item"><a class="nav-link" href="./index.html">Контакты</a></li>
                 </ul>
-                <button class="menu-button-mobile" type="button">
+                
+                <!-- menu for mobile version -->
+                <button type="button" class="menu-button-mobile" data-menu-button>
                     <svg width="40" height="40">
                         <use class="icon-burger" href="./images/all-svg-icons.svg#icon-burger"></use>
                         <use class="icon-close" href="./images/all-svg-icons.svg#icon-close"></use>
                     </svg>
                 </button>
+                
+                <div class="menu-mobile" data-menu>
+                    <ul class="menu-mobile-links">
+                        <li class="item"><a class="menu-mobile-link active-page" href="./index.html">Студия</a></li>
+                        <li class="item"><a class="menu-mobile-link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="item"><a class="menu-mobile-link" href="./index.html">Контакты</a></li>
+                    </ul>
+                    <ul class="menu-mobile-contacts">
+                        <li class="item">
+                            <a class="menu-mobile-contact" href="mailto:info@example.com">
+                                <svg class="icon-letter" width="16" height="12">
+                                    <use href="./images/all-svg-icons.svg#icon-letter"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a class="menu-mobile-contact" href="tel:+380991111111">
+                                <svg class="icon-smartphone" width="10" height="16">
+                                    <use href="./images/all-svg-icons.svg#icon-smartphone"></use>
+                                </svg>
+                                +38 099 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             
             <ul class="contacts">
@@ -444,6 +472,7 @@
     </footer>
     <!-- Modal window script -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <script>
         (() => {
             document.

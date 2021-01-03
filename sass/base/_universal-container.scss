@@ -1,13 +1,10 @@
 .container {
-  // width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 
-  // outline: 1px solid black;
-
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: 479px) {
     width: 100%;
   }
 
@@ -19,7 +16,7 @@
     width: 768px;
   }
 
-  // @media screen and (min-width: $desktop) {
-  //   width: 1200px;
-  // }
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
 }
