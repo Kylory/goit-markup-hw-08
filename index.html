@@ -14,67 +14,48 @@
     <!-- header -->
     <header class="header">
         <div class="container">
-            <nav class="nav">
-                <a class="logo" href="./index.html">Web<span class="logo-studio-header">Studio</span></a>
-                <ul class="links">
-                    <li class="item"><a class="nav-link active-page" href="./index.html">Студия</a></li>
-                    <li class="item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="item"><a class="nav-link" href="./index.html">Контакты</a></li>
+            <a class="logo" href="./index.html">Web<span class="logo-studio-header">Studio</span></a>
+
+            <div class="menu-mobile" data-menu>
+                <nav class="nav">
+                    <ul class="links">
+                        <li class="item"><a class="nav-link active-page" href="./index.html">Студия</a></li>
+                        <li class="item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="item"><a class="nav-link" href="./index.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <ul class="contacts">
+                    <li class="item">
+                        <a class="contacts-header" href="mailto:info@example.com">
+                            <svg class="icon-letter" width="16" height="12">
+                                <use href="./images/all-svg-icons.svg#icon-letter"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="contacts-header" href="tel:+380991111111">
+                            <svg class="icon-smartphone" width="10" height="16">
+                                <use href="./images/all-svg-icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 099 111 11 11
+                        </a>
+                    </li>
                 </ul>
-                
-                <!-- menu for mobile version -->
-                <button type="button" class="menu-button-mobile" data-menu-button>
-                    <svg width="40" height="40">
-                        <use class="icon-burger" href="./images/all-svg-icons.svg#icon-burger"></use>
-                        <use class="icon-close" href="./images/all-svg-icons.svg#icon-close"></use>
-                    </svg>
-                </button>
-                
-                <div class="menu-mobile" data-menu>
-                    <ul class="menu-mobile-links">
-                        <li class="item"><a class="menu-mobile-link active-page" href="./index.html">Студия</a></li>
-                        <li class="item"><a class="menu-mobile-link" href="./portfolio.html">Портфолио</a></li>
-                        <li class="item"><a class="menu-mobile-link" href="./index.html">Контакты</a></li>
-                    </ul>
-                    <ul class="menu-mobile-contacts">
-                        <li class="item">
-                            <a class="menu-mobile-contact" href="mailto:info@example.com">
-                                <svg class="icon-letter" width="16" height="12">
-                                    <use href="./images/all-svg-icons.svg#icon-letter"></use>
-                                </svg>
-                                info@devstudio.com
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a class="menu-mobile-contact" href="tel:+380991111111">
-                                <svg class="icon-smartphone" width="10" height="16">
-                                    <use href="./images/all-svg-icons.svg#icon-smartphone"></use>
-                                </svg>
-                                +38 099 111 11 11
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            
-            <ul class="contacts">
-                <li class="item">
-                    <a class="contacts-header" href="mailto:info@example.com">
-                        <svg class="icon-letter" width="16" height="12"><use href="./images/all-svg-icons.svg#icon-letter"></use></svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="contacts-header" href="tel:+380991111111">
-                        <svg class="icon-smartphone" width="10" height="16"><use href="./images/all-svg-icons.svg#icon-smartphone"></use></svg>
-                        +38 099 111 11 11
-                    </a>
-                </li>
-            </ul>
+            </div>
+
+            <!-- menu button for mobile version -->
+            <button type="button" class="menu-button-mobile" data-menu-button>
+                <svg width="40" height="40">
+                    <use class="icon-burger" href="./images/all-svg-icons.svg#icon-burger"></use>
+                    <use class="icon-close" href="./images/all-svg-icons.svg#icon-close"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <!-- main -->
-    <main class="main">
+    <main>
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
@@ -135,7 +116,7 @@
                 <ul class="benefits-content">
                     <li class="item">
                         <div class="icon-background">
-                            <svg class="icon-details" width="70" height="70">
+                            <svg width="70" height="70">
                                 <use href="./images/all-svg-icons.svg#icon-benefits-details"></use>
                             </svg>
                         </div>
@@ -146,7 +127,7 @@
                 
                     <li class="item">
                         <div class="icon-background">
-                            <svg class="icon-punctuality" width="70" height="70">
+                            <svg width="70" height="70">
                                 <use href="./images/all-svg-icons.svg#icon-benefits-punctuality"></use>
                             </svg>
                         </div>
@@ -157,7 +138,7 @@
                 
                     <li class="item">
                         <div class="icon-background">
-                            <svg class="icon-planing" width="70" height="70">
+                            <svg width="70" height="70">
                                 <use href="./images/all-svg-icons.svg#icon-benefits-planing"></use>
                             </svg>
                         </div>
@@ -168,7 +149,7 @@
                 
                     <li class="item">
                         <div class="icon-background">
-                            <svg class="icon-technology" width="70" height="70">
+                            <svg width="70" height="70">
                                 <use href="./images/all-svg-icons.svg#icon-benefits-technology"></use>
                             </svg>
                         </div>
@@ -429,28 +410,28 @@
                 <ul class="links-list">
                     <li class="item">
                         <a href="">
-                            <svg class="icon-instagram" width="20" height="20">
+                            <svg width="20" height="20">
                                 <use href="./images/all-svg-icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="item">
                         <a href="">
-                            <svg class="icon-twitter" width="20" height="20">
+                            <svg width="20" height="20">
                                 <use href="./images/all-svg-icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="item">
                         <a href="">
-                            <svg class="icon-facebook" width="20" height="20">
+                            <svg width="20" height="20">
                                 <use href="./images/all-svg-icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="item">
                         <a href="">
-                            <svg class="icon-linkedin" width="20" height="20">
+                            <svg width="20" height="20">
                                 <use href="./images/all-svg-icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
