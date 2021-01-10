@@ -22,16 +22,15 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $text-color;
+  fill: currentColor;
+  transition: color 250ms $cubic-function;
 
   @media screen and (max-width: 767px) {
     font-size: 18px;
     line-height: 1.17;
   }
-
-  letter-spacing: 0.02em;
-  color: $text-color;
-  fill: currentColor;
-  transition: color 250ms $cubic-function;
 
   @media screen and (min-width: $desktop) {
     padding-top: 32px;
@@ -61,6 +60,7 @@
 .icon-letter,
 .icon-smartphone {
   margin-right: 10px;
+
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-right: 8px;
   }

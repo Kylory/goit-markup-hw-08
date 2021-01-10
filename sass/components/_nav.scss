@@ -7,6 +7,7 @@
   @media screen and (min-width: $tablet) {
     display: none;
   }
+
   margin: auto 0 auto auto;
   padding: 0;
   border: 0;
@@ -24,6 +25,7 @@
 .menu-mobile {
   width: 100%;
   display: flex;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -72,15 +74,19 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $title-color;
+  transition: color 250ms $cubic-function;
+
   @media screen and (max-width: 767px) {
     font-size: 18px;
     line-height: 1.17;
   }
-  letter-spacing: 0.02em;
-  color: $title-color;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color 250ms $cubic-function;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 32px;
+    padding-bottom: 31px;
+  }
 
   &:hover,
   &:focus {
@@ -88,12 +94,21 @@
   }
 }
 
-.links .item:not(:last-child) {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 40px;
+.links .item {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      margin-right: 50px;
+    }
   }
-  @media screen and (min-width: $tablet) {
-    margin-right: 50px;
+
+  &.active {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 52px;
+    }
   }
 }
 
@@ -102,7 +117,7 @@
   position: relative;
 
   @media screen and (max-width: 767px) {
-    padding-bottom: 12px;
+    padding-bottom: 8px;
   }
 
   &::after {

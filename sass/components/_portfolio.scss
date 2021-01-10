@@ -56,43 +56,20 @@
   margin: -15px;
 }
 
-.portfolio-cards .item a {
-  display: block;
-}
-
-/* Cards title */
-.portfolio-cards h2 {
-  color: $title-color;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-/* Cards type */
-.portfolio-cards p {
-  color: $text-color;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-}
-
 .portfolio-cards .item {
   @media screen and (min-width: $mobile) {
     width: 450px;
   }
 
   @media screen and (min-width: $tablet) {
-    // width: calc((100% - 30px) / 2);
     width: 354px;
   }
 
   @media screen and (min-width: $desktop) {
-    // width: calc((100% - 60px) / 3);
     width: 370px;
   }
 
-  min-height: 404px;
+  // min-height: 404px;
   position: relative;
   margin: 15px;
 
@@ -103,22 +80,44 @@
   }
 }
 
-.portfolio-cards img {
-  width: 100%;
-  height: auto;
-}
-
-.portfolio-cards .description {
-  padding: 20px 24px;
-  //   height: 110px;
-  border-bottom: 1px solid #ececec;
-  border-right: 1px solid #ececec;
-  border-left: 1px solid #ececec;
+.portfolio-cards .item a {
+  display: block;
+  height: 100%;
 }
 
 .thumb {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio-cards .title {
+  color: $title-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 3px;
+}
+
+.portfolio-cards .type {
+  color: $text-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.portfolio-cards .description {
+  padding: 20px 24px;
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+}
+
+// for first card (secont card is higher than another on tablet)
+.portfolio-cards .item:first-child .description {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    padding-bottom: 56px;
+  }
 }
 
 .portfolio-cards .text {
@@ -144,16 +143,13 @@
     padding: 63px 24px;
   }
 
-  //   height: 294px;
   height: 100%;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-
   color: $white-color;
   background-color: rgba(33, 150, 243, 0.9);
-
   transition: transform 250ms $cubic-function;
 }
 
