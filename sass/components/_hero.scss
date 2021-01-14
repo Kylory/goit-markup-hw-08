@@ -1,27 +1,48 @@
 .hero {
   background-color: #c4c4c4;
-  background-image: $gradient, url("../images/hero-background-480.jpg");
+  background-image: $gradient,
+    url("../images/studio/mobile/hero-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media screen and (min-resolution: 2dppx) {
-    background-image: $gradient, url("../images/hero-background-480-@2x.jpg");
+    background-image: $gradient,
+      url("../images/studio/mobile/hero-background-mobile-@2x.jpg");
   }
 
-  @media screen and (min-width: $tablet) {
-    background-image: $gradient, url("../images/hero-background-768.jpg");
+  @media screen and (min-resolution: 3dppx) {
+    background-image: $gradient,
+      url("../images/studio/mobile/hero-background-mobile-@3x.jpg");
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: $gradient,
+      url("../images/studio/tablet/hero-background-tablet.jpg");
 
     @media screen and (min-resolution: 2dppx) {
-      background-image: $gradient, url("../images/hero-background-768-@2x.jpg");
+      background-image: $gradient,
+        url("../images/studio/tablet/hero-background-tablet-@2x.jpg");
+    }
+
+    @media screen and (min-resolution: 3dppx) {
+      background-image: $gradient,
+        url("../images/studio/tablet/hero-background-tablet-@3x.jpg");
     }
   }
 
-  @media screen and (min-width: $desktop) {
-    background-image: $gradient, url("../images/hero-background-1600.jpg");
+  @media screen and (min-width: 769px) {
+    background-image: $gradient,
+      url("../images/studio/desktop/hero-background-desktop.jpg");
 
     @media screen and (min-resolution: 2dppx) {
-      background-image: $gradient, url("../images/hero-background-1600-@2x.jpg");
+      background-image: $gradient,
+        url("../images/studio/desktop/hero-background-desktop-@2x.jpg");
+    }
+
+    @media screen and (min-resolution: 3dppx) {
+      background-image: $gradient,
+        url("../images/studio/desktop/hero-background-desktop-@3x.jpg");
     }
   }
 }
