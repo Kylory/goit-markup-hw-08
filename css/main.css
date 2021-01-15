@@ -1562,6 +1562,12 @@ svg {
   margin: 15px;
 }
 
+@media screen and (max-width: 479px) {
+  .portfolio-cards .item {
+    width: calc(100% - 30px);
+  }
+}
+
 @media screen and (min-width: 480px) {
   .portfolio-cards .item {
     width: 450px;
@@ -1595,6 +1601,10 @@ svg {
 .portfolio-cards .thumb {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio-cards .thumb img {
+  width: 100%;
 }
 
 .portfolio-cards .title {

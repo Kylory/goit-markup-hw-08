@@ -57,6 +57,10 @@
 }
 
 .portfolio-cards .item {
+  @media screen and (max-width: 479px) {
+    width: calc(100% - 30px);
+  }
+
   @media screen and (min-width: $mobile) {
     width: 450px;
   }
@@ -87,6 +91,10 @@
 .portfolio-cards .thumb {
   position: relative;
   overflow: hidden;
+
+  img {
+    width: 100%;
+  }
 }
 
 .portfolio-cards .title {
