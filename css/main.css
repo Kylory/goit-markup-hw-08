@@ -1603,8 +1603,17 @@ svg {
   overflow: hidden;
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio-cards .thumb {
+    height: 294px;
+  }
+}
+
 .portfolio-cards .thumb img {
+  height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .portfolio-cards .title {
@@ -1654,6 +1663,12 @@ svg {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 479px) {
+  .portfolio-cards .text {
+    padding: 24px;
+  }
 }
 
 @media screen and (min-width: 480px) {
