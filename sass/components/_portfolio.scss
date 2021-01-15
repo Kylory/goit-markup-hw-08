@@ -69,7 +69,6 @@
     width: 370px;
   }
 
-  // min-height: 404px;
   position: relative;
   margin: 15px;
 
@@ -85,7 +84,7 @@
   height: 100%;
 }
 
-.thumb {
+.portfolio-cards .thumb {
   position: relative;
   overflow: hidden;
 }
@@ -134,7 +133,7 @@
 
   @media screen and (min-width: $tablet) {
     width: 354px;
-    // padding: 49px 24px;
+    padding: 49px 24px;
     padding-top: 49px;
   }
 

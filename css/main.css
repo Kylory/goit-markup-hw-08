@@ -1592,7 +1592,7 @@ svg {
   height: 100%;
 }
 
-.thumb {
+.portfolio-cards .thumb {
   position: relative;
   overflow: hidden;
 }
@@ -1656,6 +1656,7 @@ svg {
 @media screen and (min-width: 768px) {
   .portfolio-cards .text {
     width: 354px;
+    padding: 49px 24px;
     padding-top: 49px;
   }
 }
